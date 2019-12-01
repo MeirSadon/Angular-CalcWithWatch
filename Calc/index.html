@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="Calculator">
+<head>
+    <title>Calculator</title>
+    <script src="angular.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="Calc.ctrl.js"></script>
+</head>
+<body>
+    <div ng-controller="CalcCtrl">
+
+        <p><input type="number" ng-model="x">
+            <select ng-model="oper">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" ng-model="y">
+             = {{sum}}</p>
+    </div>
+</body>
+</html>
